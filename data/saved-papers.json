@@ -1,0 +1,28 @@
+[
+  {
+    "id": "https://openalex.org/W626601348",
+    "title": "The Manitous : The Spiritual World of the Ojibway",
+    "authors": [
+      "Basil Johnston"
+    ],
+    "publicationYear": 1995,
+    "abstract": null,
+    "citationCount": 78,
+    "doi": null,
+    "sourceUrl": "http://ci.nii.ac.jp/ncid/BA81969631",
+    "sourceName": "Medical Entomology and Zoology"
+  },
+  {
+    "id": "https://openalex.org/W4232533539",
+    "title": "Machine Learning",
+    "authors": [
+      "Zhi‐Hua Zhou"
+    ],
+    "publicationYear": 2021,
+    "abstract": null,
+    "citationCount": 820,
+    "doi": "https://doi.org/10.1007/978-981-15-1967-3",
+    "sourceUrl": "https://doi.org/10.1007/978-981-15-1967-3",
+    "sourceName": "Springer eBooks"
+  }
+]

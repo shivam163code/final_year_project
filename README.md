@@ -1,5 +1,20 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Literature review demo storage
+
+The Literature Review workspace uses a server-side JSON file at `data/literature.json` because this project does not currently configure MongoDB or authentication. The API keeps imported OpenAlex metadata separate from user-entered analytical notes and supports the demo user only. The file is created on the first successful import; it should not be treated as production persistence or shared-user data storage. Configure a server-side repository and authentication before deploying the workspace for multiple users.
+
+## Authentication and MongoDB
+
+Signup, login, logout, sessions, and saved-paper ownership require these server-only variables:
+
+```text
+MONGODB_URI=mongodb://127.0.0.1:27017
+MONGODB_DB=research_lens
+```
+
+Copy `.env.example` to `.env.local` and provide a real MongoDB deployment before using authentication. Passwords are bcrypt-hashed and sessions are stored in MongoDB behind an HttpOnly cookie. The current literature JSON demo remains shared and is not user-scoped; it must be migrated to a user-owned repository before production use.
+
 ## Getting Started
 
 First, run the development server:
